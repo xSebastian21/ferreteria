@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../js/axios.js"></script>
+    <script src="../../js/productos.js"></script>
+    <title>Producto</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+          }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Productos</h1>
+    </div>
+    <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="txtNombre" id="txtNombre">
+    </div>
+    <div>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" name="txtCantidad" id="txtCantidad">
+    </div>
+    <div>
+        <button onclick="create()">Crear</button>
+        <button onclick="update()">Actualizar</button>
+        <button onclick="deletes()">Eliminar</button>
+    </div>
+    <table id="tableData">
+        
+        <tbody id="tableBody"></tbody>   
+    </table>
+</body>
+</html>
